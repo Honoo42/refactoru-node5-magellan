@@ -6,8 +6,7 @@ html
 		link(rel="stylesheet", type="text/css", href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css")
 		link(rel="stylesheet", type="text/css", href="main.css")
 		link(rel="stylesheet", type="text/css", href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css")
+
 	body
+		a.btn-primary#next-btn(href='#{nextUrl}') Next
 		block content
-	form(action='/canaryislands')
-		button.btn-primary#next-btn(type='submit') Next
-		script(src="main.js")
