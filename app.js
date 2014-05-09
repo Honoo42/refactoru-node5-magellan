@@ -97,7 +97,8 @@ app.get('/philippines', function(req, res) {
 		pageName: location
 	});
 });
-
+// port needed for heroku
+var port = process.env.PORT || 8475;
 var server = app.listen(8475, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
